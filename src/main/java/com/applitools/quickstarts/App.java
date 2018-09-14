@@ -1,6 +1,5 @@
 package com.applitools.quickstarts;
 
-
 import java.util.HashMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,35 +9,63 @@ import com.applitools.eyes.RectangleSize;
 /**
  * 
  * This file runs four different tests for different parts of the tutorial based
- * on the arguments that's passed through the CLI.
+ * on the arguments that's passed as arguments.
  *
+ */
+
+/**
+ * ---------------------
+ * How to Execute
+ * ---------------------
+ * 
+ * From the Command line (Maven): 
+ * 
+ * You can run different tests by setting the "args" value to one of "1", "2", "3" or "4"
+ * 
+ * For test Part 1
+ * mvn exec:java -Dexec.mainClass="com.applitools.quickstarts.App" -Dexec.args="1"
+ * 
+ * 
+ * 
+ * From within Eclipse:
+ * 
+ * "Run app" menu --> Run Configurations.. --> Arguments (tab) 
+ * --> Enter "1", "2", "3" or "4" in the "Program arguments" section --> Click "Run".
+ * 
+ */
+
+/*
+ * ---------------------------------------------------------------------
+ * Note: How to load Environment variables into Eclipse / IntelliJ:
+ * ---------------------------------------------------------------------
+ * 
+ * If you are running the tests through an editor like Eclipse or IngelliJ. 
+ * Open the editor directly from the Terminal (and not by clicking on the editor icon).
+ * To do that, run "open /path/to/Eclipse.app" from the Terminal.
+ * 
+ * This will load all the environment variables that's set in that Terminal into
+ * Eclipse/IntelliJ! This will avoid you hard-coding paths and keys for things
+ * as webdriver.chrome.driver, APPLITOOLS_API_KEY
+ * 
  */
 
 public class App {
 
+	// public static final String TEST_PART = "1";
+
 	public static void main(String[] args) {
 
+
 		/*
-		 * **** Important Note ***:
-		 * 
-		 * Please open Eclipse/IntelliJ directly from the Terminal.
-		 * 
-		 * To do that, run "open /path/to/Eclipse.app" from the Terminal.
-		 * 
-		 * This will load all the environment variables that's set in that Terminal into
-		 * Eclipse/IntelliJ! This will avoid you hard-coding paths and keys for things
-		 * as webdriver.chrome.driver, APPLITOOLS_API_KEY
-		 * 
-		 * If you still have problem, uncomment the following line and hard-code the
-		 * ABSOLUTE path to the chromedriver
+		 * Use Chrome browser
+		 *	
+		 * If you don't want to load chromedriver's path from the environment variable as suggested above,
+		 * uncomment the following line and hard-code the ABSOLUTE path to the chromedriver
 		 * 
 		 * System.setProperty("webdriver.chrome.driver", "/Users/apps/chromedriver");
 		 */
-
-		/*
-		 * Open a Chrome browser
-		 * 
-		 */
+		
+		
 		WebDriver driver = new ChromeDriver();
 
 		// Check if the Applitools API key is set in the environment
