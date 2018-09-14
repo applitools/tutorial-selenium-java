@@ -2,11 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mycompany.app</groupId>
-	<artifactId>my-app</artifactId>
+	<groupId>com.applitools.quickstarts</groupId>
+	<artifactId>Java-tutorial</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>my-app</name>
+	<version>1.0</version>
+	<name>Java-tutorial</name>
 	<url>http://maven.apache.org</url>
 
 	<!-- Use JDK 10 -->
@@ -34,14 +34,14 @@
 		<dependency>
 			<groupId>com.applitools</groupId>
 			<artifactId>eyes-selenium-java3</artifactId>
-			<version>RELEASE</version>
+			<version> [3.0.0, 4.0.0)</version>
 		</dependency>
 
 		<!-- Required to run "mvn package" which runs test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>RELEASE</version>
+			<version>4.12</version>
 			<scope>compile</scope>
 		</dependency>
 

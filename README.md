@@ -1,4 +1,4 @@
-- git clone https://github.com/rajaraodv/Applitools-Selenium-Java-Quickstart.git
+- git clone https://github.com/applitools/tutorial-selenium-java.git
 - cd Applitools-Selenium-Java-Quickstart
 - mvn package  # To install dependencies and compile the project 
 - mvn exec:java -Dexec.mainClass="com.applitools.quickstarts.App"  -Dexec.args="1" # to run the 1st test
