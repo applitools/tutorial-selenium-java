@@ -51,8 +51,6 @@ import com.applitools.eyes.RectangleSize;
 
 public class App {
 
-	// public static final String TEST_PART = "1";
-
 	public static void main(String[] args) {
 
 
@@ -88,11 +86,11 @@ public class App {
 			// Call getTestInfoForPart to get the appropriate test information.
 			HashMap<String, String> testInfo = App.getTestInfoForPart(args);
 
-			// Start the test and set the browser's viewport size to 800x600.
+			// Start the test by setting AUT's name, window or the page name that's being tested, viewport width and height
 			eyes.open(driver, testInfo.get("appName"), testInfo.get("windowName"), new RectangleSize(
 					Integer.parseInt(testInfo.get("viewportWidth")), Integer.parseInt(testInfo.get("viewportHeight"))));
 
-			// Navigate the browser to the "hello world!" web-site.
+			// Navigate the browser to the "ACME" demo app
 			driver.get(testInfo.get("url"));
 
 			// Visual checkpoint #1.
@@ -150,8 +148,8 @@ public class App {
 		}
 		HashMap<String, String> hmap = new HashMap<String, String>();
 
-		String baseUrl = "https://pensive-bose-78b68c.netlify.com/";
-		// String baseUrl = "http://localhost:8000/";
+		String baseUrl = "https://demo.applitools.com/";
+		//String baseUrl = "file:///Users/raja.rao/apps/acme-demo-app/";
 		String viewportWidth = "1200";
 		String viewportHeight = "750";
 		String testName = "Login Page Java Quickstart";

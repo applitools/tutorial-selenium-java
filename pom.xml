@@ -16,25 +16,11 @@
 	</properties>
 
 	<dependencies>
-		<!-- Required for wait logic -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-support</artifactId>
-			<version>3.14.0</version>
-		</dependency>
-
-		<!-- This is Selenium Java SDK -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
-			<version>3.14.0</version>
-		</dependency>
-
 		<!-- This is the Applitools Selenium Java SDK -->
 		<dependency>
 			<groupId>com.applitools</groupId>
 			<artifactId>eyes-selenium-java3</artifactId>
-			<version> [3.0.0, 4.0.0)</version>
+			<version>[3.0.0, 4.0.0)</version>
 		</dependency>
 
 		<!-- Required to run "mvn package" which runs test -->
@@ -42,7 +28,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
-			<scope>compile</scope>
+			<scope>test</scope>
 		</dependency>
 
 
