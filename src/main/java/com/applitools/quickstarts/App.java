@@ -150,8 +150,8 @@ public class App {
 
 		String baseUrl = "https://demo.applitools.com/";
 		//String baseUrl = "file:///Users/raja.rao/apps/acme-demo-app/";
-		String viewportWidth = "1200";
-		String viewportHeight = "750";
+		String viewportWidth = "600";
+		String viewportHeight = "800";
 		String testName = "Login Page Java Quickstart";
 		String appName = "ACME app";
 		String loginPageName = "Login Page";
