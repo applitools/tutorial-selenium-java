@@ -99,8 +99,8 @@ public class App {
 			// End the test.
 			eyes.close();
 
-		} catch (Exception e) {
-			System.out.println(e);
+		} catch (TestFailedException e) {
+			System.out.println("\n" + e + "\n");
 		} finally {
 
 			// Close the browser.
