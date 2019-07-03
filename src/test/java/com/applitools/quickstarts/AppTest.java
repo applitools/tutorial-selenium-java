@@ -6,8 +6,6 @@ import com.applitools.eyes.StdoutLogHandler;
 import com.applitools.eyes.TestResultSummary;
 import com.applitools.eyes.selenium.ClassicRunner;
 import com.applitools.eyes.selenium.Eyes;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
