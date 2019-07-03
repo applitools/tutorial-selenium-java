@@ -3,7 +3,7 @@ package com.applitools.quickstarts;
 import com.applitools.eyes.EyesRunner;
 import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.StdoutLogHandler;
-import com.applitools.eyes.TestResultSummary;
+import com.applitools.eyes.TestResultsSummary;
 import com.applitools.eyes.selenium.ClassicRunner;
 import com.applitools.eyes.selenium.Eyes;
 import org.junit.After;
@@ -114,6 +114,6 @@ public class AppTest {
         eyes.abortIfNotClosed();
 
         //Wait and collect all test results
-        TestResultSummary allTestResults = runner.getAllTestResults();
+        TestResultsSummary allTestResults = runner.getAllTestResults();
     }
 }
