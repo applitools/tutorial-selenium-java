@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Unit test for simple App.
+ * Applitools getting started demo.
  */
 public class AppTest {
 
